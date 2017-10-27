@@ -69,7 +69,7 @@ window.onload = function () {
     }
   }
 
-  // click funtion
+  // click function
    check = function () {
     list.onclick = function () {
       var guess = (this.innerHTML);
@@ -92,6 +92,10 @@ window.onload = function () {
         comments();
       }
  
+ // PSEUDOCODING THIS PART!
+      // I know that I need to push my guesses (if wrong) into an array and show that array in
+      // in my "guesses" section of html. I know I'll need .innerHTML and I'll be doing a push, but it
+      //is not working above. I tried setting variable outside of function, but that doesn't work either. *sadface*
       console.log(guess);
 
     }
