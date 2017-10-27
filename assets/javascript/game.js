@@ -87,7 +87,7 @@ window.onload = function () {
         lives -= 1;
         comments();
         
-        document.getElementById("guesses").innerHTML = "You guessed: " + wrongGuess;
+        document.getElementById("guesses").innerHTML = "You guessed: " + guess;
       } else {
         comments();
       }
