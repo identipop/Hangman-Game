@@ -86,7 +86,7 @@ window.onload = function () {
       if (j === -1) {
         lives -= 1;
         comments();
-        wrongGuess.push(guess);
+        
         document.getElementById("guesses").innerHTML = "You guessed: " + wrongGuess;
       } else {
         comments();
@@ -97,6 +97,8 @@ window.onload = function () {
       // in my "guesses" section of html. I know I'll need .innerHTML and I'll be doing a push, but it
       //is not working above. I tried setting variable outside of function, but that doesn't work either. *sadface*
       console.log(guess);
+      wrongGuess.push(guess);
+      console.log(wrongGuess);
 
     }
   }
