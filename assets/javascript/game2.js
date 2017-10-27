@@ -73,7 +73,6 @@ window.onload = function () {
    check = function () {
     list.onclick = function () {
       var guess = (this.innerHTML);
-      var wrongGuess = [];
       this.setAttribute("class", "active");
       this.onclick = null;
       for (var i = 0; i < word.length; i++) {
@@ -86,8 +85,9 @@ window.onload = function () {
       if (j === -1) {
         lives -= 1;
         comments();
-        wrongGuess.push(guess);
-        document.getElementById("guesses").innerHTML = "You guessed: " + wrongGuess;
+       
+        
+        document.getElementById("guesses").innerHTML = "You guessed: " + guess;
       } else {
         comments();
       }
@@ -104,7 +104,7 @@ window.onload = function () {
         ["tamagotchis", "pogs", "the macarena", "grunge", "overalls", 
           "furby", "moon shoes", "jnco jeans", "mood rings", "butterfly clips", "hackey sack", 
           "troll dolls", "doc martens", "lava lamps", "pet rocks", "hot wheels", "pokemon", "super nintendo",
-          "dunkaroos", "lisa frank", "johnathan taylor thomas", "tickle me elmo", "frosted tips"];
+          "dunkaroos", "lisa frank", "johnathan taylor thomas", "tickle me elmo"];
 
     // choose word
     word = index[Math.floor(Math.random() * index.length)];
